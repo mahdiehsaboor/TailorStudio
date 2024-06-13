@@ -1,4 +1,4 @@
-from assignment.model.entity import *
+from assignment.model.entity import * # to do 
 class Order(Base):
     __tablename__ = "order_tbl"
     id = Column(Integer, primary_key=True,autoincrement=True)
