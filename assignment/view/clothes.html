@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Profile</title>
+    <title>Clothes Profile</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <form action="/customer" method="post"  class="form-group">
+    <form action="/clothes" method="post"  class="form-group">
         Name_clothes <input class="form-control" type="text" name="name_clothes">
         Fabric <input class="form-control" type="text" name="fabric">
         Color <input class="form-control" type="text" name="color">
@@ -39,7 +39,7 @@
         </thead>
 
         <tbody>
-        {% for customer in customer_list[1]: %}
+        {% for clothes in clothes_list[1]: %}
         <tr>
             <td>{{ clothes.id }}</td>
             <td>{{ clothes.name_clothes }}</td>
@@ -49,8 +49,8 @@
             <td>{{ clothes.size }}</td>
             <td>{{ clothes.description }}</td>
             <td>
-                <button class="btn btn-warning" onclick="edit({{customer.id}})" >Edit <i class="fa fa-edit"></i></button>
-                <button class="btn btn-danger" onclick="remove({{customer.id}})">Remove <i class="fa fa-remove"></i></button>
+                <button class="btn btn-warning" onclick="edit({{clothes.id}})" >Edit <i class="fa fa-edit"></i></button>
+                <button class="btn btn-danger" onclick="remove({{clothes.id}})">Remove <i class="fa fa-remove"></i></button>
             </td>
         </tr>
         {% endfor %}
@@ -59,7 +59,7 @@
 </div>
 <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{url_for('static', filename='js/font-awesome.js')}}"></script>
-<script src="{{url_for('static', filename='js/customer.js')}}"></script>
+<script src="{{url_for('static', filename='js/clothes.js')}}"></script>
 </body>
 </html>
 
