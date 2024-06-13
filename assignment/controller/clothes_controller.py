@@ -1,4 +1,4 @@
-from assignment.model.bl.clothes_bl  import ClothesBl
+from assignment.model.bl.clothes_bl  import ClothesBl # to do 
 from assignment.model.entity.clothes import Clothes
 from assignment.model.tools.decorators import exception_handling
 
