@@ -1,4 +1,4 @@
-from assignment.model.bl.tailor_bl import TailorBl
+from assignment.model.bl.tailor_bl import TailorBl # to do 
 from assignment.model.entity.tailor import Tailor
 from assignment.model.tools.decorators import exception_handling
 
