@@ -1,7 +1,7 @@
 from assignment.model.entity import * # to do
 
 
-class Customer(Base):
+class Customer(Base): # to do and line 89
     __tablename__ = "customer_tbl"
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(30), nullable=False)
@@ -86,7 +86,7 @@ class Customer(Base):
         print("Get national id")
         return self._national_id
 
-    @national_id.setter
+    @national_id.setter # to do 
     def national_id(self, national_id):
         print("Set national id")
         if re.match(r"^\d{10}$", national_id):
