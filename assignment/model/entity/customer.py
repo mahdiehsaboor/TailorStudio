@@ -1,4 +1,4 @@
-from assignment.model.entity import *
+from assignment.model.entity import * # to do
 
 
 class Customer(Base):
@@ -63,7 +63,7 @@ class Customer(Base):
     @phone.setter
     def phone(self, phone):
         print("Set phone")
-        if re.match("\+\d|\d{9,15}", phone):  # r'^\+?1?\d{9,15}$
+        if re.match(r"\+\d|\d{9,15}", phone):  # r'^\+?1?\d{9,15}$
             self._phone = phone
         else:
             raise ValueError("Invalid phone")
