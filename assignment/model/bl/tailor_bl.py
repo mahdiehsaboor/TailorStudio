@@ -1,4 +1,4 @@
-from assignment.controller.exceptions import TailorNotFoundError
+from assignment.controller.exceptions import TailorNotFoundError # to do
 from assignment.model.da.da import DataAccess
 from assignment.model.entity.tailor import Tailor
 
