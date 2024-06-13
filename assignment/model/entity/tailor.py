@@ -1,4 +1,4 @@
-from assignment.model.entity import *
+from assignment.model.entity import * # to do 
 
 class Tailor(Base):
     __tablename__ = "tailor_tbl"
@@ -31,7 +31,7 @@ class Tailor(Base):
     @name.setter
     def name(self, name):
         print("Set name")
-        if re.match("^[A-Za-z\s]+$", name):
+        if re.match(r"^[A-Za-z\s]+$", name):
             self._name = name
         else:
             raise ValueError("Invalid name")
@@ -44,7 +44,7 @@ class Tailor(Base):
     @family.setter
     def family(self, family):
         print("Set family")
-        if re.match("^[A-Za-z\s]+$", family):
+        if re.match(r"^[A-Za-z\s]+$", family):
             self._family = family
         else:
             raise ValueError("Invalid family")
@@ -57,7 +57,7 @@ class Tailor(Base):
     @phone.setter
     def phone(self, phone):
         print("Set phone")
-        if re.match("\+\d|\d{11}", phone):  # r'^\+?1?\d{9,15}$
+        if re.match(r"\+\d|\d{11}", phone):  # r'^\+?1?\d{9,15}$
             self._phone = phone
         else:
             raise ValueError("Invalid phone")
@@ -83,7 +83,7 @@ class Tailor(Base):
     @national_id.setter
     def national_id(self, national_id):
         print("Set national id")
-        if re.match("r'^\d{10}$'", national_id):
+        if re.match(r"^\d{10}$'", national_id):
             self._national_id = national_id
         else:
             raise ValueError("Invalid national Id")
