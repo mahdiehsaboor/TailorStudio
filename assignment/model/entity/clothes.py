@@ -1,4 +1,4 @@
-from assignment.model.entity import *
+from assignment.model.entity import * #to do 
 
 
 class Clothes(Base):
@@ -31,7 +31,7 @@ class Clothes(Base):
     @name_clothes.setter
     def name_clothes(self, name_clothes):
         print("Set name")
-        if re.match("^[A-Za-z\s]+$", name_clothes):
+        if re.match(r"^[A-Za-z\s]+$", name_clothes):
             self._name_clothes = name_clothes
         else:
             raise ValueError("Invalid name_clothes")
@@ -44,7 +44,7 @@ class Clothes(Base):
     @fabric.setter
     def fabric(self, fabric):
         print("Set name")
-        if re.match("^[A-Za-z\s]+$", fabric):
+        if re.match(r"^[A-Za-z\s]+$", fabric):
             self._fabric = fabric
         else:
             raise ValueError("Invalid fabric")
@@ -57,7 +57,7 @@ class Clothes(Base):
     @color.setter
     def color(self, color):
         print("Set color")
-        if re.match("^[A-Za-z\s]+$", color):
+        if re.match(r"^[A-Za-z\s]+$", color):
             self._color = color
         else:
             raise ValueError("Invalid color")
