@@ -1,4 +1,4 @@
-from assignment.model.bl.customer_bl import CustomerBl
+from assignment.model.bl.customer_bl import CustomerBl #to do
 from assignment.model.entity.customer import Customer
 from assignment.model.tools.decorators import exception_handling
 
