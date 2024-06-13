@@ -1,4 +1,4 @@
-from assignment.model.entity import Customer,Tailor,Clothes,Order
+from assignment.model.entity import Customer,Tailor,Clothes,Order # to do
 from assignment.model.bl.customer_bl import CustomerBl
 from assignment.model.bl.tailor_bl import TailorBl
 from assignment.model.bl.clothes_bl import ClothesBl
