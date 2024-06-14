@@ -2,7 +2,7 @@ from flask import Flask,request,render_template,redirect,jsonify
 from controller.customer_controller import CustomerController
 from controller.order_controller import OrderController
 from controller.tailor_controller import TailorController
-from controller.clothes_controller import ClothesController
+from controller.clothes_controller import ClothesContoller
 
 app = Flask(__name__,template_folder="view", static_folder="view/assets")
 
