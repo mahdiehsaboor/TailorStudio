@@ -16,12 +16,24 @@
 
 <div class="container">
     <form action="/order" method="post"  class="form-group">
-        Order_date<input class="form-control" type="date" name="order_date">
-        Delivery_date<input class="form-control" type="date" name="delivery_date">
-        Status <input class="form-control" type="checkbox" name="status">
-        Customer_id <input class="form-control" type="text" name="customer_id">
-        Tailor_id <input class="form-control" type="text" name="tailor_id">
-        Clothes_id <input class="form-control" type="text" name="clothes_id">
+        <div class="mb-3">
+            Order_date<input class="form-control" type="date" name="order_date">
+        </div>
+        <div class="mb-3">
+            Delivery_date<input class="form-control" type="date" name="delivery_date">
+        </div>
+        <div class="mb-3">
+            Status <input class="form-control" type="checkbox" name="status">
+        </div>
+        <div class="mb-3">
+            Customer_id <input class="form-control" type="text" name="customer_id">
+        </div>
+        <div class="mb-3">
+            Tailor_id <input class="form-control" type="text" name="tailor_id">
+        </div>
+        <div class="mb-3">
+            Clothes_id <input class="form-control" type="text" name="clothes_id">
+        </div>
 
 
         <button class="btn btn-success">Save <i class="fa fa-save"></i></button>
