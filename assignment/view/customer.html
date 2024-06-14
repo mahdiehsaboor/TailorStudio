@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 
+    <style>
+         h1 {color: #3700ff;}
+    </style>
+
+
 </head>
 <body>
+<h1>Welcome to Tailor Studio</h1>
+
 <div class="container">
     <form action="/customer" method="post"  class="form-group">
         Name <input class="form-control" type="text" name="name">
